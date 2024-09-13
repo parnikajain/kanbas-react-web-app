@@ -262,9 +262,9 @@ Your favorite books (in no particular order)
       id="wd-text-fields-dob"
       value="2000-01-21"/><br/>
 <h4>Anchor tag</h4>
-Please
+Please 
 <a id="wd-github" href="https://www.github.com">click here</a>
-to get dummy text<br/>
+ to get dummy text<br/>
       </div>
       );
     }
