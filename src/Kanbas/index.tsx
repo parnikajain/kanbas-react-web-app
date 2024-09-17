@@ -4,16 +4,16 @@ import Dashboard from "./Dashboard";
 import KanbasNavigation from "./Navigation";
 import Courses from "./Courses";
 export default function Kanbas() {
-    return (
-      <div id="wd-kanbas">
-        <table>
+  return (
+    <div id="wd-kanbas">
+      <table>
         <tr>
           <td valign="top">
             <KanbasNavigation />
           </td>
           <td valign="top">
             <Routes>
-              <Route path="/" element={<Navigate to="/Kanbas/Account" />} />
+              <Route path="/" element={<Navigate to="Account" />} />
               <Route path="/Account/*" element={<Account />} />
               <Route path="/Dashboard" element={<Dashboard />} />
               <Route path="/Courses/:cid/*" element={<Courses />} />
@@ -23,6 +23,5 @@ export default function Kanbas() {
           </td>
         </tr>
       </table>
-      </div>
-  );}
-  
+    </div>
+);}
