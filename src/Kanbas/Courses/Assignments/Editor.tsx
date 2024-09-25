@@ -3,7 +3,7 @@ import { Navigate } from 'react-router';
 export default function AssignmentEditor() {
     return (
       <div id="wd-assignments-editor">
-        <label htmlFor="wd-name">Assignment Name</label>
+        <label htmlFor="wd-name"><b>Assignment Name</b></label><br/><br/>
         <input id="wd-name" value="A1 - ENV + HTML" /><br /><br />
         <textarea id="wd-description" cols={30} rows={10}>
           The assignment is available online Submit a link to the landing page of your
@@ -30,7 +30,7 @@ export default function AssignmentEditor() {
               <select id="wd-group">
                 <option selected value="ASSIGNMENTS">ASSIGNMENTS</option>
                 </select>
-          </tr>
+          </tr><br/>
           <tr>
             <td align="right" valign="top">
               <label htmlFor="wd-display-grade-as">Display Grade as</label>
@@ -38,7 +38,7 @@ export default function AssignmentEditor() {
               <select id="wd-display-grade-as">
                 <option selected value="PERCENTAGE">Percentage</option>
                 </select>
-          </tr>
+          </tr><br/>
           <tr>
             <td align="right" valign="top">
               <label htmlFor="wd-submission-type">Submission type</label>
@@ -61,16 +61,16 @@ export default function AssignmentEditor() {
 
                 <input type="checkbox" name="check-option" id="wd-file-upload"/>
                 <label htmlFor="wd-file-upload">File Upload</label>
-          </tr>
+          </tr><br/>
           <tr>
             <td align="right" valign="top">
               <label htmlFor="wd-assign-to">Assign</label>
               </td>
               <label htmlFor='wd-assign-to'>Assign to</label><br/>
-              <input id="wd-everyone" value={"Everyone"} /><br/>
-              <label>Due</label><br/>
-              <input type="date" id="wd-due" value={"2024-05-13"} /><br/>
-              <label htmlFor='wd-available-from'>Available from</label>
+              <input id="wd-everyone" value={"Everyone"} /><br/><br/>
+              <label htmlFor='wd-due'>Due</label><br/>
+              <input type="date" id="wd-due" value={"2024-05-13"} /><br/><br/>
+              <label htmlFor='wd-available-from'>Available from</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <label htmlFor='wd-available-until'>Until</label><br/>
               <input type="date" id="wd-available-from" value={"2024-05-06"} />
               <input type="date" id="wd-available-until" value={"2024-05-20"} /><br/>
